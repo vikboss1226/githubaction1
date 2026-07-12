@@ -1,8 +1,13 @@
 name: 02-github-action
-on: push
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
 jobs:
   trigger-job:
     runs-on: ubuntu-latest
     steps:
-      - name: show the trigger
-        run: echo "I have triggered by a(n) ${{github.event_name}}"
+      - name: Show the trigger
+        run: echo "I was triggered by a(n) ${{ github.event_name }}"

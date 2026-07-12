@@ -1,4 +1,5 @@
 name: 01-github-action
+
 on:
   push:
   pull_request:
@@ -16,7 +17,7 @@ jobs:
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: success job now
+      - name: Success job now
         run: |
           echo "failing now"
-            exit 0
+          exit 0
