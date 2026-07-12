@@ -1,0 +1,19 @@
+name: 03-runners-info
+
+on: workflow_dispatch
+
+jobs:
+  linux-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show os
+        run: |
+          echo "OS : $RUNNER_OS"
+
+  windows-info:
+    runs-on: windows-latest
+    steps:
+      - name: windows-machine
+        shell: bash
+        run: |
+          echo "WINDOWS: $RUNNER_OS"
