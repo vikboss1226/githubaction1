@@ -1,0 +1,8 @@
+name: 01-github-action
+on: push
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show the trigge r
+        run: echo "I have triggered by a(n) ${{github.event_name}}"
