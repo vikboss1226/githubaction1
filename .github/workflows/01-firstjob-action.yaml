@@ -13,4 +13,4 @@ jobs:
       - name: failed step
         run: |
           echo "failing now"
-            exit 1
+            exit 0
