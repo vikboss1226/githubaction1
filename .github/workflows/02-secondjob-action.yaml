@@ -1,4 +1,4 @@
-name: 01-github-action
+name: 02-github-action
 on: push
 jobs:
   trigger-job:
