@@ -6,3 +6,11 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "hello world"
+
+  echo-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: failed step
+        run: |
+          echo "failing now"
+            exit 1
