@@ -10,7 +10,7 @@ jobs:
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: failed step
+      - name: success job now
         run: |
           echo "failing now"
             exit 0
